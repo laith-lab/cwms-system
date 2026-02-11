@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: cwms-system
+    plan: free
+    runtime: docker
+    repo: https://github.com/laith-lab/cwms-system
+    branch: main
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3000
