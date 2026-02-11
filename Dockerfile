@@ -8,7 +8,7 @@ WORKDIR /app
 COPY package*.json ./
 
 # تثبيت المتعلقات
-RUN npm ci --only=production
+RUN npm install --omit=dev
 
 # نسخ باقي الكود
 COPY . .
