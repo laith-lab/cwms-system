@@ -1,0 +1,22 @@
+{
+  "name": "cwms-system",
+  "description": "Centralized Warehouse Management System",
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "env": {
+    "NODE_ENV": {
+      "description": "Environment",
+      "value": "production"
+    },
+    "PORT": {
+      "description": "Port",
+      "value": "3000"
+    }
+  },
+  "scripts": {
+    "postdeploy": "npm start"
+  }
+}
